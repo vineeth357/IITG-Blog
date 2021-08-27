@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% block content %}
+  <div class="content-section">
+    <div class="media">
+      <img class="rounded-circle account-img" src="{{ object.image.url }}">
+      <div class="media-body">
+        <h2 class="account-heading">{{ object.user.username }}</h2>
+        <p class="text-secondary">{{ object.stream }}, {{ object.branch }}</p>
+      </div>
+    </div>
+    <div>
+      <p class="text-secondary">Email:           {{ object.user.email }}</p>
+      <p class="text-secondary">Year of joining: {{ object.year_of_joining }}</p>
+    </div>
+  </div>
+{% endblock content %}
