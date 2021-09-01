@@ -1,0 +1,1 @@
+web: gunicorn iitg_blog.wsgi
